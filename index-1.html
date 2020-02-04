@@ -1,0 +1,618 @@
+<!--
+Theme Name:     hpthemes23
+Version:        1.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<!-- HEAD -->
+	<head>
+		<title>Demo 1</title><!-- Title of your page -->
+		<meta charset="utf-8">
+		<meta name="keywords" content="Agency, Landing, Page, Home, About, Services, Work, Reviews, Team, Blog, Contact">
+		<meta name="description" content="The best solution to promote your agency. The perfect landing page that will help you to accomplish your goal.">
+		<meta name="author" content="samwebdeveloper123">
+		<meta name="viewport" content="width=content-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"><!-- Google Fonts css -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet"><!-- Font Awesome css -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap css -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"><!-- Owl Carousel css -->
+		<link href="website/css/main_style.css" rel="stylesheet"><!-- Main stylesheet of your page -->
+	</head>
+	<!-- END OF HEAD -->
+	<body>
+		<!-- NAVIGATION BAR -->
+		<nav class="navbar navbar-light fixed-top">
+			<div class="c-styling">
+				<a class="navbar-brand navbar-brand-styling" href="index.html">hpthemes23</a><!-- logo and name -->
+			</div>
+			<div class="c-styling">
+				<a href="" class="btn btn-1 mr-1" data-toggle="modal" data-target="#modalLoginForm">Sign in</a>
+				<a href="" class="btn btn-1" data-toggle="modal" data-target="#modalRegisterForm">Sign up</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#expands" aria-controls="expands" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="expands">
+				<ul class="navbar-nav text-center">
+					<li class="nav-item">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#work">Work</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#reviews">Reviews</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#team">Team</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#blog">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<form class="input-group">
+							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+							<div class="input-group-append">
+								<a href="javascript:void(0);">
+									<button class="btn btn-1" type="submit"><i class="fas fa-search"></i></button>
+								</a>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- For sign in pop up  -->
+		<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body mx-3">
+						<div class="md-form mb-5">
+							<i class="fas fa-envelope prefix grey-text"></i>
+							<input type="email" id="defaultForm-email" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+						</div>
+						<div class="md-form mb-4">
+							<i class="fas fa-lock prefix grey-text"></i>
+							<input type="password" id="defaultForm-pass" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+						</div>
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+						<button class="btn btn-1">Sign in</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- For sign up pop up  -->
+		<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body mx-3">
+						<div class="md-form mb-5">
+							<i class="fas fa-user prefix grey-text"></i>
+							<input type="text" id="orangeForm-name" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+						</div>
+						<div class="md-form mb-5">
+							<i class="fas fa-envelope prefix grey-text"></i>
+							<input type="email" id="orangeForm-email" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+						</div>
+						<div class="md-form mb-4">
+							<i class="fas fa-lock prefix grey-text"></i>
+							<input type="password" id="orangeForm-pass" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+						</div>
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+						<button class="btn btn-1">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END OF NAVIGATION BAR -->
+		<!-- HEADER -->
+		<header id="home" class="parallax-demo-1-1 img-fluid thetop">
+			<div class="container-fluid h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-12 text-center">
+						<h1 class="hp-styling-demo-1">Agency Landing Page</h1>
+						<p class="hp-styling-demo-1 pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						<p class="hp-styling-demo-1">tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- END OF HEADER -->
+		<!-- ABOUT -->
+		<section id="about" class="link-show-styling">
+			<div class="container-fluid text-center py-5">
+				<div class="card">
+					<div class="row no-gutters">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<img src="website/images/men-1979261_1920.jpg" class="card-img" alt="Mockup Image">
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<div class="card card-body h-100 justify-content-center align-self-center">
+								<h1 class="card-title">About Us</h1>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<!-- END OF ABOUT -->
+		<!-- SERVICES -->
+		<section id="services" class="link-show-styling">
+			<div class="container-fluid text-center py-5">
+				<h1 class="pb-5">Services</h1>
+				<div class="card-columns">
+					<div class="card">
+						<div class="card-body">
+							<i class="fas fa-thumbs-up fa-2x"></i>
+							<h5 class="font-weight-bold card-title pt-3">Best Seller</h5>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<i class="far fa-star fa-2x"></i>
+							<h5 class="font-weight-bold card-title pt-3">Highest Rating</h5>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<i class="fas fa-users fa-2x"></i>
+							<h5 class="font-weight-bold card-title pt-3">Experienced Team</h5>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF SERVICES -->
+		<!-- COUNT -->
+		<section id="count" class="link-show-styling">
+			<div class="container-fluid text-center py-5 parallax-demo-1-2">
+				<div class="row py-5 my-5">
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<h1 class="text-white count">300</h1>
+						<p>Likes</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<h1 class="text-white count">500</h1>
+						<p>Happy Clients</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<h1 class="text-white count">600</h1>
+						<p>Projects Completed</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<h1 class="text-white count">100</h1>
+						<p>Employees</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF COUNT -->
+		<!-- WORK -->
+		<section id="work" class="link-show-styling">
+			<div class="container text-center py-5">
+				<ul class="nav nav-pills nav-pills-1 pb-5 justify-content-center" id="pills-tab" role="tablist">
+					<li class="nav-item">
+				    	<a class="nav-link active" id="all-tab" data-toggle="pill" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+				  	</li>
+				  	<li class="nav-item">
+				    	<a class="nav-link" id="creative-tab" data-toggle="pill" href="#creative" role="tab" aria-controls="creative" aria-selected="false">Creative</a>
+				  	</li>
+				  	<li class="nav-item">
+				    	<a class="nav-link" id="personal-tab" data-toggle="pill" href="#personal" role="tab" aria-controls="personal" aria-selected="false">Personal</a>
+				  	</li>
+				</ul>
+				<div class="tab-content" id="pills-tabContent">
+  					<div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+  						<div id="all py-5">
+							<div class="card-columns">
+								<div class="card hover-zoomin">
+									<a href="javascript:void(0);"><img src="website/images/startup-594090_1920.jpg" class="card-img mx-auto" alt="All1"></a>
+								</div>
+								<div class="card hover-zoomin">
+									<a href="javascript:void(0);"><img src="website/images/computer-1185626_1920.jpg" class="card-img mx-auto" alt="All2"></a>
+								</div>
+								<div class="card hover-zoomin">
+									<a href="javascript:void(0);"><img src="website/images/macbook-336704_1920.jpg" class="card-img mx-auto" alt="All3"></a>
+								</div>
+							</div>
+							<div class="card-columns">
+								<div class="card hover-zoomin">
+									<a href="javascript:void(0);"><img src="website/images/startup-594091_1920.jpg" class="card-img mx-auto" alt="All4"></a>
+								</div>
+								<div class="card hover-zoomin">
+									<a href="javascript:void(0);"><img src="website/images/woman-792162_1920.jpg" class="card-img mx-auto" alt="All5"></a>
+								</div>
+								<div class="card hover-zoomin">
+									<a href="javascript:void(0);"><img src="website/images/startup-593341_1920.jpg" class="card-img mx-auto" alt="All6"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="creative" role="tabpanel" aria-labelledby="creative-tab">
+						<div id="creative py-5">
+							<div class="card-columns">
+								<div class="card hover-zoomin">
+									<a href="javascript:void(0);"><img src="website/images/computer-1185626_1920.jpg" class="card-img mx-auto" alt="Creative1"></a>
+								</div>
+								<div class="card hover-zoomin">
+									<a href="javascript:void(0);"><img src="website/images/startup-593341_1920.jpg" class="card-img mx-auto" alt="Crative2"></a>
+								</div>
+								<div class="card hover-zoomin">
+									<a href="javascript:void(0);"><img src="website/images/startup-594091_1920.jpg" class="card-img mx-auto" alt="Creative3"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+						<div id="personal py-5">
+							<div class="card-columns">
+								<div class="card hover-zoomin">
+									<img src="website/images/startup-594090_1920.jpg" class="card-img mx-auto" alt="Personal1">
+								</div>
+								<div class="card hover-zoomin">
+									<img src="website/images/macbook-336704_1920.jpg" class="card-img mx-auto" alt="Personal2">
+								</div>
+								<div class="card hover-zoomin">
+									<img src="website/images/woman-792162_1920.jpg" class="card-img mx-auto" alt="Personal3">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF WORK -->
+		<!-- REVIEWS -->
+		<section id="reviews" class="link-show-styling">
+			<div class="container-fluid text-center py-5 parallax-demo-1-3">
+				<h1 class="pb-5 text-white">Reviews</h1>
+				<div class="owl-demo-1-1 owl-carousel">
+					<div class="text-white">
+						<img src="website/images/man-1209494_640.jpg" class="rounded-circle img-fluid mx-auto image-size" alt="Reviewer1">
+						<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<p>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+						</p>
+						<h3 class="font-weight-bold">John Doe</h3>
+						<p>CEO, xyz company</p>
+					</div>
+					<div class="text-white">
+						<img src="website/images/flower-child-336658_640.jpg" class="rounded-circle img-fluid mx-auto image-size" alt="Reviewer2">
+						<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<p>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+						</p>
+						<h3 class="font-weight-bold">Jane Doe</h3>
+						<p>CEO, xyz company</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF REVIEWS -->
+		<!-- TEAM -->
+		<section id="team" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Our Team</h1>
+				<div class="card-columns">
+					<div class="card">
+						<div class="card-body">
+							<img class="card-img mx-auto" src="website/images/girl-1848454_640.jpg" alt="member1">
+							<p class="pt-5">
+								<i class="fas fa-phone-alt"></i>
+								(123)456-7890
+							</p>
+							<p>
+								<i class="fas fa-envelope-open"></i>
+								example@gmail.com
+							</p>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-twitter fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-facebook-f fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-instagram fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-whatsapp fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-reddit-alien fa-lg"></i></a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<img class="card-img mx-auto" src="website/images/model-1246028_640.jpg" alt="member2">
+							<p class="pt-5">
+								<i class="fas fa-phone-alt"></i>
+								(123)456-7890
+							</p>
+							<p>
+								<i class="fas fa-envelope-open"></i>
+								example@gmail.com
+							</p>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-twitter fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-facebook-f fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-instagram fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-whatsapp fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-reddit-alien fa-lg"></i></a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<img class="card-img mx-auto" src="website/images/woman-1149911_640.jpg" alt="member3">
+							<p class="pt-5">
+								<i class="fas fa-phone-alt"></i>
+								(123)456-7890
+							</p>
+							<p>
+								<i class="fas fa-envelope-open"></i>
+								example@gmail.com
+							</p>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-twitter fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-facebook-f fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-instagram fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-whatsapp fa-lg"></i></a>
+							<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-reddit-alien fa-lg"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF TEAM -->
+		<!-- BLOG -->
+		<section id="blog" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Latest News</h1>
+				<div class="card-columns">
+					<div class="card">
+						<a href="javascript:void(0);">
+							<img src="website/images/laptop-2434393_1920.jpg" class="card-img mx-auto" alt="blog1">
+						</a>
+						<div class="card-body text-left">
+							<h4 class="card-title">Lorem ipsum</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="javascript:void(0);">
+							<img src="website/images/acer-791027_1920.jpg" class="card-img mx-auto" alt="blog2">
+						</a>
+						<div class="card-body text-left">
+							<h4 class="card-title">Lorem ipsum</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="javascript:void(0);">
+							<img src="website/images/office-932926_1920.jpg" class="card-img mx-auto" alt="blog3">
+						</a>
+						<div class="card-body text-left">
+							<h4 class="card-title">Lorem ipsum</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+				</div>
+				<a class="btn btn-1 mt-5" href="javascript:void(0);">View More</a>
+			</div>
+		</section>
+		<!-- END OF BLOG -->
+		<!-- VIDEO -->
+		<section id="video">
+			<div class="container-fluid py-5">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="website/videos/Ipad - 2988.mp4" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<!-- END OF VIDEO -->
+		<!-- CONTACT -->
+		<section id="contact" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Contact Us</h1>
+				<form id="contact-form" method="post" action="javascript:void(0);" role="form">
+					<div class="messages"></div>
+					<div class="controls">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+								<i class="fas fa-envelope-open"></i>
+								<p>example@gmail.com</p>
+								<i class="fas fa-phone-alt"></i>
+								<p>(123)456-7890 </p>
+								<i class="fas fa-map-marker"></i>
+								<p>Building Number, Street Name, Neighborhood</p>
+								<p>City, Postal Code or Zip Code</p>
+								<p>Additional Number</p>
+								<i class="fas fa-clock"></i>
+								<p>Monday-Friday: 9:00 AM to 5:00 PM</p>
+								<p>Satuday and Sunday: Holidays</p>
+								<div class="col-12 py-5 pl-0">
+									<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-instagram fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-facebook-f fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-twitter fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-whatsapp fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-1"><i class="fab fa-reddit-alien fa-lg mr-2"></i></a>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+								<div class="form-group text-left">
+									<label for="form_name">Firstname *</label>
+									<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Firstname" data-error="Firstname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group text-left">
+									<label for="form_lastname">Lastname *</label>
+									<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Lastname " data-error="Lastname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group text-left">
+									<label for="form_email">Email *</label>
+									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your Email Address " data-error="Valid email is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group text-left">
+									<label for="form_message">Message *</label>
+									<textarea id="form_message" name="message" class="form-control" placeholder="Please leave us a Message " rows="4" data-error="Please, leave us a message."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group">
+									<input type="submit" class="btn btn-1" value="Send message">
+								</div>
+							</div>
+						</div>	
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- END OF CONTACT -->
+		<!-- NEWSLETTER -->
+		<section id="newsletter">
+			<div class="container-fluid text-center py-5 parallax-demo-1-4">
+				<div class="py-5 my-5">
+					<h1 class="pb-5">Join our Newsletter</h1>
+					<form class="input-group justify-content-center">
+						<input class="form-control col-8" type="email" placeholder="Email Address" aria-label="newsletter">
+						<div class="input-group-append">
+							<a href="javascript:void(0);">
+								<button class="btn btn-1" type="submit">Join</button>
+							</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- END OF NEWSLETTER -->
+		<!-- FOOTER -->
+		<section id="footer-1">
+			<div class="container-fluid py-5 h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-md-4 text-center">
+						<p>
+							<a href="#home" class="link-1">Home</a>
+						
+						<p>
+							<a href="#about" class="link-1">About</a>
+						</p>
+						<p>
+							<a href="#services" class="link-1">Services</a>
+						</p>
+						<p>
+							<a href="#work" class="link-1">Work</a>
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<p>
+							<a href="#reviews" class="link-1">Reviews</a>
+						</p>
+						<p>
+							<a href="#team" class="link-1">Team</a>
+						</p>
+						<p>
+							<a href="#blog" class="link-1">Blog</a>
+						</p>
+						<p>
+							<a href="#contact" class="link-1">Contact</a>
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<p>
+							<a href="javascript:void(0);" class="link-1">Terms of Services</a>
+						</p>
+						<p>
+							<a href="javascript:void(0);" class="link-1">Privacy Policy</a>
+						</p>
+						<p>
+							<a href="javascript:void(0);" class="link-1">Site Map</a>
+						</p>
+						<a href="javascript:void(0);" class="link-1"><i class="fab fa-instagram fa-lg mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-1"><i class="fab fa-facebook-f fa-lg mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-1"><i class="fab fa-twitter fa-lg mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-1"><i class="fab fa-whatsapp fa-lg mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-1"><i class="fab fa-reddit-alien fa-lg mr-2"></i></a>
+					</div>
+					<div class="col-12 text-center pt-5">
+						<p>hpthemes23 © 2020.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF FOOTER -->
+		<!-- SCROLL TOP -->
+		<div class='scrolltop'>
+			<div class='scroll icon'>
+				<i class="fa fa-4x fa-angle-up"></i>
+			</div>
+		</div>
+		<!-- END OF SCROLL TOP -->
+		<!-- JAVASCRIPT FILE -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!-- jquery script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script><!-- jquery waypoints script -->
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script><!-- jquery ui script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script><!-- jquery counterup script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script><!-- popper script -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script><!-- bootstrap script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script><!-- owl carousel script -->
+		<script src="website/js/script.js"></script><!-- main script of your page -->
+    </body>
+</html>

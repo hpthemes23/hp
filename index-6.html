@@ -1,0 +1,624 @@
+<!--
+Theme Name:     hpthemes23
+Version:        1.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<!-- HEAD -->
+	<head>
+		<title>Demo 6</title><!-- Title of your page -->
+		<meta charset="utf-8">
+		<meta name="keywords" content="Book, Landing, Page, Home, About, Services, Chapters, Ratings, Reviews, Pricing, Blog, Contact, More Books">
+		<meta name="description" content="The best solution to promote your Book. The perfect landing page that will help you to accomplish your goal.">
+		<meta name="author" content="samwebdeveloper123">
+		<meta name="viewport" content="width=content-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"><!-- Google Fonts css -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet"><!-- Font Awesome css -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap css -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"><!-- Owl Carousel css -->
+		<link href="website/css/main_style.css" rel="stylesheet"><!-- Main stylesheet of your page -->
+	</head>
+	<!-- END OF HEAD -->
+	<body>
+		<!-- NAVIGATION BAR -->
+		<nav class="navbar navbar-light fixed-top">
+			<div class="c-styling">
+				<a class="navbar-brand navbar-brand-styling" href="index.html">hpthemes23</a><!-- logo and name -->
+			</div>
+			<div class="c-styling">
+				<a href="" class="btn btn-6 mr-1" data-toggle="modal" data-target="#modalLoginForm">Sign in</a>
+				<a href="" class="btn btn-6" data-toggle="modal" data-target="#modalRegisterForm">Sign up</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#expands" aria-controls="expands" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="expands">
+				<ul class="navbar-nav text-center">
+					<li class="nav-item">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#chapters">Chapters</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#ratings">Ratings</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#reviews">Reviews</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pricing">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#blog">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#more-books">More Books from the Author</a>
+					</li>
+					<li class="nav-item">
+						<form class="input-group">
+							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+							<div class="input-group-append">
+								<a href="javascript:void(0);">
+									<button class="btn btn-6" type="submit"><i class="fas fa-search"></i></button>
+								</a>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- For sign in pop up  -->
+		<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body mx-3">
+						<div class="md-form mb-5">
+							<i class="fas fa-envelope prefix grey-text"></i>
+							<input type="email" id="defaultForm-email" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+						</div>
+						<div class="md-form mb-4">
+							<i class="fas fa-lock prefix grey-text"></i>
+							<input type="password" id="defaultForm-pass" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+						</div>
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+						<button class="btn btn-6">Sign in</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- For sign up pop up  -->
+		<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body mx-3">
+						<div class="md-form mb-5">
+							<i class="fas fa-user prefix grey-text"></i>
+							<input type="text" id="orangeForm-name" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+						</div>
+						<div class="md-form mb-5">
+							<i class="fas fa-envelope prefix grey-text"></i>
+							<input type="email" id="orangeForm-email" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+						</div>
+						<div class="md-form mb-4">
+							<i class="fas fa-lock prefix grey-text"></i>
+							<input type="password" id="orangeForm-pass" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+						</div>
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+						<button class="btn btn-6">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END OF NAVIGATION BAR -->
+		<!-- HEADER -->
+		<header id="home" class="parallax-demo-6-1 img-fluid thetop">
+			<div class="container-fluid h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-12 text-center div-header">
+						<h1 class="hp-styling-demo-6">Book Landing Page</h1>
+						<p class="hp-styling-demo-6 pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						<p class="hp-styling-demo-6">tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- END OF HEADER -->
+		<!-- ABOUT -->
+		<section id="about" class="link-show-styling">
+			<div class="container-fluid text-center py-5">
+				<div class="card">
+					<div class="row no-gutters">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<img src="website/images/student-865073_1920.jpg" class="card-img" alt="Mockup Image">
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<div class="card card-body h-100 justify-content-center align-self-center">
+								<h1 class="card-title">About Us</h1>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<!-- END OF ABOUT -->
+		<!-- SERVICES -->
+		<section id="services" class="link-show-styling">
+			<div class="container-fluid text-center py-5">
+				<h1 class="pb-5">Services</h1>
+				<div class="card-columns">
+					<div class="card">
+							<div class="card-body">
+							<i class="fas fa-thumbs-up fa-3x"></i>
+							<h5 class="card-title pt-3">Best Seller</h5><!-- feature title -->
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p><!-- feature text -->
+						</div>
+					</div>
+					<div class="card">
+							<div class="card-body">
+							<i class="far fa-star fa-3x"></i>
+							<h5 class="card-title pt-3">Highest Rating</h5><!-- feature title -->
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p><!-- feature text -->
+						</div>
+					</div>
+					<div class="card">
+							<div class="card-body">
+							<i class="fas fa-pencil-alt fa-3x"></i>
+							<h5 class="card-title pt-3">Experienced Writer</h5><!-- feature title -->
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p><!-- feature text -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF SERVICES -->
+		<!-- COUNT -->
+		<section class="link-show-styling" id="count">
+			<div class="container-fluid text-center py-5 parallax-demo-6-2">
+				<div class="row py-5 my-5 div-transparent">
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<h1 class="demo-6-hp-styling count">350</h1>
+						<p class="">Pages</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<h1 class="demo-6-hp-styling count">17</h1>
+						<p class="">Chapters</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<h1 class="demo-6-hp-styling count">2000</h1>
+						<p class="">Sales</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<h1 class="demo-6-hp-styling count">9000</h1>
+						<p class="">Downloads</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF COUNT -->
+		<!-- CHAPTERS INCLUDED -->
+		<section id="chapters" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Chapters Included</h1>
+				<div class="owl-demo-6-1 owl-carousel"><!-- Owl carousel autoplay slides to show the chapters -->
+					<div class="card">
+						<div class="card-body">
+							<i class="fas fa-book-open fa-5x"></i><!-- Chapter icon -->
+							<h5 class="card-title pt-3">Chapter 1</h5><!-- Chapter title -->
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p><!-- Chapter description -->
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<i class="fas fa-book-open fa-5x"></i><!-- Chapter icon -->
+							<h5 class="card-title pt-3">Chapter 2</h5><!-- Chapter title -->
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p><!-- Chapter description -->
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<i class="fas fa-book-open fa-5x"></i><!-- Chapter icon -->
+							<h5 class="card-title pt-3">Chapter 3</h5><!-- Chapter title -->
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p><!-- Chapter description -->
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<i class="fas fa-book-open fa-5x"></i><!-- Chapter icon -->
+							<h5 class="card-title pt-3">Chapter 4</h5><!-- Chapter title -->
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p><!-- Chapter description -->
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<i class="fas fa-book-open fa-5x"></i><!-- Chapter icon -->
+							<h5 class="card-title pt-3">Chapter 5</h5><!-- Chapter title -->
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p><!-- Chapter description -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF CHAPTERS INCLUDED -->
+		<!-- RATINGS -->
+		<section id="ratings" class="parallax-demo-6-3">
+			<div class="container-fluid py-5 h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-12 text-center div-transparent p-4">
+						<h1 class="py-3 demo-6-hp-styling">Ratings</h1>
+				<div class="owl-demo-6-2 owl-carousel">
+					<div class="">
+						<p class="py-2 demo-6-hp-styling">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<p class="demo-6-hp-styling">
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+						</p>
+						<h3 class="font-weight-bold demo-6-hp-styling">Goodreads</h3>
+					</div>
+					<div class="">
+						<p class="py-2 demo-6-hp-styling">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<p class="demo-6-hp-styling">
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+						</p>
+						<h3 class="font-weight-bold demo-6-hp-styling">Reader's Digest</h3>
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF RATINGS -->
+		<!-- REVIEWS -->
+		<section id="reviews" class="link-show-styling">
+			<div class="container-fluid text-center py-5">
+				<h1 class="pb-5">Reviews</h1>
+				<div class="owl-demo-6-2 owl-carousel">
+					<div class="">
+						<img src="website/images/man-1209494_640.jpg" class="rounded-circle img-fluid mx-auto image-size" alt="Reviewer1">
+						<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<p>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+						</p>
+						<h3 class="font-weight-bold">John Doe</h3>
+						<p>CEO, xyz company</p>
+					</div>
+					<div class="">
+						<img src="website/images/flower-child-336658_640.jpg" class="rounded-circle img-fluid mx-auto image-size" alt="Reviewer2">
+						<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<p>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+							<i class="fa fa-star product-styling"></i>
+						</p>
+						<h3 class="font-weight-bold">Jane Doe</h3>
+						<p>CEO, xyz company</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF REVIEWS -->
+		<!-- PRESENTATION -->
+		<section id="presentaion" class="parallax-demo-6-4 img-fluid">
+			<div class="container-fluid h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-12 text-center">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF PRESENTATION -->
+		<!-- PRICING -->
+		<section id="pricing" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Pricing</h1>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="card-columns text-center">
+							<div class="card pricing-demo-6-1">
+								<div class="card-body">
+									<h3 class="m-4">Basic</h3>
+									<ul class="list-group">
+										<li class="list-group-item"><h5>$9.99 / year</h5></li>
+										<li class="list-group-item">10GB Storage</li>
+										<li class="list-group-item">10 Emails</li>
+										<li class="list-group-item">10 Domains</li>
+										<li class="list-group-item">1GB Bandwidth</li>
+										<li class="list-group-item">Basic Support</li>
+									</ul>
+									<a href="javascript:void(0);" class="btn btn-6 mt-4">Get Started</a>
+								</div>
+							</div>
+							<div class="card pricing-demo-6-2">
+								<div class="card-body">
+									<h3 class="m-4 text-white">Professional</h3>
+									<ul class="list-group">
+										<li class="list-group-item"><h5>$24.99 / year</h5></li>
+										<li class="list-group-item">25GB Storage</li>
+										<li class="list-group-item">25 Emails</li>
+										<li class="list-group-item">25 Domains</li>
+										<li class="list-group-item">2GB Bandwidth</li>
+										<li class="list-group-item">Priority Support</li>
+									</ul>
+									<a href="javascript:void(0);" class="btn btn-6 mt-4">Get Started</a>
+								</div>
+							</div>
+							<div class="card pricing-demo-6-1">
+								<div class="card-body">
+									<h3 class="m-4">Premium</h3>
+									<ul class="list-group">
+										<li class="list-group-item"><h5>$49.99 / year</h5></li>
+										<li class="list-group-item">50GB Storage</li>
+										<li class="list-group-item">50 Emails</li>
+										<li class="list-group-item">50 Domains</li>
+										<li class="list-group-item">5GB Bandwidth</li>
+										<li class="list-group-item">Email and Phone Support</li>
+									</ul>
+									<a href="javascript:void(0);" class="btn btn-6 mt-4">Get Started</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF PRICING -->
+		<!-- BLOG -->
+		<section id="blog" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Latest News</h1>
+				<div class="card-columns">
+					<div class="card">
+						<a href="javascript:void(0);">
+							<img src="website/images/laptop-2434393_1920.jpg" class="card-img mx-auto" alt="blog1">
+						</a>
+						<div class="card-body text-left">
+							<h4 class="card-title">Lorem ipsum</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="javascript:void(0);">
+							<img src="website/images/acer-791027_1920.jpg" class="card-img mx-auto" alt="blog2">
+						</a>
+						<div class="card-body text-left">
+							<h4 class="card-title">Lorem ipsum</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="javascript:void(0);">
+							<img src="website/images/office-932926_1920.jpg" class="card-img mx-auto" alt="blog3">
+						</a>
+						<div class="card-body text-left">
+							<h4 class="card-title">Lorem ipsum</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+				</div>
+				<a class="btn btn-6 mt-5" href="javascript:void(0);">View More</a>
+			</div>
+		</section>
+		<!-- END OF BLOG -->
+		<!-- VIDEO -->
+		<section id="video">
+			<div class="container-fluid py-5">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="website/videos/Book - 4952.mp4" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<!-- END OF VIDEO -->
+		<!-- CONTACT -->
+		<section id="contact" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Contact Us</h1>
+				<form id="contact-form" method="post" action="javascript:void(0);" role="form">
+					<div class="messages"></div>
+					<div class="controls">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+								<i class="fas fa-envelope-open"></i>
+								<p>example@gmail.com</p>
+								<i class="fas fa-phone-alt"></i>
+								<p>(123)456-7890 </p>
+								<i class="fas fa-map-marker"></i>
+								<p>Building Number, Street Name, Neighborhood</p>
+								<p>City, Postal Code or Zip Code</p>
+								<p>Additional Number</p>
+								<i class="fas fa-clock"></i>
+								<p>Monday-Friday: 9:00 AM to 5:00 PM</p>
+								<p>Satuday and Sunday: Holidays</p>
+								<div class="col-12 py-5 pl-0">
+									<a href="javascript:void(0);" class="a-link-6"><i class="fab fa-instagram fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-6"><i class="fab fa-facebook-f fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-6"><i class="fab fa-twitter fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-6"><i class="fab fa-whatsapp fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-6"><i class="fab fa-reddit-alien fa-lg mr-2"></i></a>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+								<div class="form-group text-left">
+									<label for="form_name">Firstname *</label>
+									<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Firstname" data-error="Firstname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group text-left">
+									<label for="form_lastname">Lastname *</label>
+									<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Lastname " data-error="Lastname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group text-left">
+									<label for="form_email">Email *</label>
+									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your Email Address " data-error="Valid email is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group text-left">
+									<label for="form_message">Message *</label>
+									<textarea id="form_message" name="message" class="form-control" placeholder="Please leave us a Message " rows="4" data-error="Please, leave us a message."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group">
+									<input type="submit" class="btn btn-6" value="Send message">
+								</div>
+							</div>
+						</div>	
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- END OF CONTACT -->
+		<!-- MORE BOOKS -->
+		<section id="more-books" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">More Books from the Author</h1>
+				<div class="owl-demo-6-3 owl-carousel"><!-- Owl carousel autoplay slides to show the books -->
+					<div class="card">
+						<div class="card-body">
+							<img src="website/images/book-1769228_640.jpg" class="card-img" alt="Book 1 of the Author">
+							<h5 class="card-title pt-3">Book 1</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<img src="website/images/rose-2101475__340.jpg" class="card-img" alt="Book 2 of the Author">
+							<h5 class="card-title pt-3">Book 2</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<img src="website/images/book-1291164__340.jpg" class="card-img" alt="Book 3 of the Author">
+							<h5 class="card-title pt-3">Book 3</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<img src="website/images/notebook-3297317__340.jpg" class="card-img" alt="Book 4 of the Author">
+							<h5 class="card-title pt-3">Book 4</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<img src="website/images/coffee-2306471__340.jpg" class="card-img" alt="Book 5 of the Author">
+							<h5 class="card-title pt-3">Book 5</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF MORE BOOKS -->
+		<!-- FOOTER -->
+		<section id="footer-6" class="parallax-demo-6-5">
+			<div class="container-fluid py-5 h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-12 text-center div-transparent p-4">
+						<a href="javascript:void(0);" class="link-6"><i class="fab fa-instagram fa-2x mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-6"><i class="fab fa-facebook-f fa-2x mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-6"><i class="fab fa-twitter fa-2x mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-6"><i class="fab fa-whatsapp fa-2x mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-6"><i class="fab fa-reddit-alien fa-2x mr-2"></i></a>
+						<p class="pt-4">hpthemes23 © 2020.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF FOOTER -->
+		<!-- SCROLL TOP -->
+		<div class='scrolltop'>
+			<div class='scroll icon'>
+				<i class="fa fa-4x fa-angle-up"></i>
+			</div>
+		</div>
+		<!-- END OF SCROLL TOP -->
+		<!-- JAVASCRIPT FILE -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!-- jquery script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script><!-- jquery waypoints script -->
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script><!-- jquery ui script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script><!-- jquery counterup script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script><!-- popper script -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script><!-- bootstrap script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script><!-- owl carousel script -->
+		<script src="website/js/script.js"></script><!-- main script of your page -->
+    </body>
+</html>

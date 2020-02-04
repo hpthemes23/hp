@@ -1,0 +1,695 @@
+<!--
+Theme Name:     hpthemes23
+Version:        1.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<!-- HEAD -->
+	<head>
+		<title>Demo 5</title><!-- Title of your page -->
+		<meta charset="utf-8">
+		<meta name="keywords" content="Flower, Delivery, Landing page, Home, About, Services, Trending, Buy, Bestsellers, Offer, Reviews, Pricing, Blog, Contact">
+		<meta name="description" content="The best solution for online flower delivery. The perfect landing page that will help you to accomplish your goal.">
+		<meta name="author" content="samwebdeveloper123">
+		<meta name="viewport" content="width=content-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"><!-- Google Fonts css -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet"><!-- Font Awesome css -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap css -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"><!-- Owl Carousel css -->
+		<link href="website/css/main_style.css" rel="stylesheet"><!-- Main stylesheet of your page -->
+	</head>
+	<!-- END OF HEAD -->
+	<body>
+		<!-- NAVIGATION BAR -->
+		<nav class="navbar navbar-light fixed-top">
+			<div class="c-styling">
+				<a class="navbar-brand navbar-brand-styling" href="index.html">hpthemes23</a><!-- logo and name -->
+			</div>
+			<div class="c-styling">
+				<a href="" class="btn btn-5 mr-1" data-toggle="modal" data-target="#modalLoginForm">Sign in</a>
+				<a href="" class="btn btn-5" data-toggle="modal" data-target="#modalRegisterForm">Sign up</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#expands" aria-controls="expands" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="expands">
+				<ul class="navbar-nav text-center">
+					<li class="nav-item">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#trending">Trending Gifts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#steps">Buy in 3 Steps</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#bestsellers">Bestsellers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#offer">Special Offer</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#reviews">Reviews</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pricing">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#blog">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<form class="input-group">
+							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+							<div class="input-group-append">
+								<button class="btn btn-5" type="submit"><i class="fas fa-search"></i></button>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- For sign in pop up  -->
+		<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body mx-3">
+						<div class="md-form mb-5">
+							<i class="fas fa-envelope prefix grey-text"></i>
+							<input type="email" id="defaultForm-email" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+						</div>
+						<div class="md-form mb-4">
+							<i class="fas fa-lock prefix grey-text"></i>
+							<input type="password" id="defaultForm-pass" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+						</div>
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+						<button class="btn btn-5">Sign in</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- For sign up pop up  -->
+		<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-center">
+						<h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body mx-3">
+						<div class="md-form mb-5">
+							<i class="fas fa-user prefix grey-text"></i>
+							<input type="text" id="orangeForm-name" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+						</div>
+						<div class="md-form mb-5">
+							<i class="fas fa-envelope prefix grey-text"></i>
+							<input type="email" id="orangeForm-email" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+						</div>
+						<div class="md-form mb-4">
+							<i class="fas fa-lock prefix grey-text"></i>
+							<input type="password" id="orangeForm-pass" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+						</div>
+					</div>
+					<div class="modal-footer d-flex justify-content-center">
+						<button class="btn btn-5">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END OF NAVIGATION BAR -->
+		<!-- HEADER -->
+		<header id="home" class="thetop link-show-styling">
+			<div class="container-fluid text-center py-5">
+				<div class="card py-3">
+					<div class="row no-gutters">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<div class="card card-body h-100 justify-content-center align-self-center">
+								<h1 class="card-title">Flower Delivery Landing Page</h1>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+								<p>tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<img src="website/images/undraw_Gardening_eaf3.svg" class="card-img" alt="Mockup Image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- END OF HEADER -->
+		<!-- ABOUT -->
+		<section id="about" class="link-show-styling">
+			<div class="container-fluid text-center py-5">
+				<div class="card">
+					<div class="row no-gutters">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<img src="website/images/undraw_flowers_vx06.svg" class="card-img" alt="Mockup Image">
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<div class="card card-body h-100 justify-content-center align-self-center">
+								<h1 class="card-title">About Us</h1>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<!-- END OF ABOUT -->
+		<!-- FEATURES -->
+		<section id="services" class="link-show-styling">
+			<div class="container-fluid text-center py-5">
+				<h1 class="pb-5">Services</h1>
+				<div class="card-columns">
+					<div class="card">
+						<div class="card-body">
+							<i class="fas fa-thumbs-up fa-3x"></i>
+							<h5 class="card-title pt-3">Fresh Flower</h5>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<i class="far fa-star fa-3x"></i>
+							<h5 class="card-title pt-3">Highest Rating</h5>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<i class="fas fa-award fa-3x"></i>
+							<h5 class="card-title pt-3">Award winning florist</h5>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF FEATURES -->
+		<!-- TRENDING GIFTS -->
+		<section id="trending" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Trending Gifts</h1>
+				<div class="card-columns">
+					<div class="card">
+						<img src="website/images/roses-1566792_640.jpg" class="card-img-top rounded-circle pb-3" alt="Trending Gift 1">
+						<div class="card-body card-demo-5-1">
+							<h5 class="card-title">Trending Product 1</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="website/images/bouquet-691862_640.jpg" class="card-img-top rounded-circle pb-3" alt="Trending Gift 2">
+						<div class="card-body card-demo-5-1">
+							<h5 class="card-title">Trending Product 2</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="website/images/hare-4093851_640.jpg" class="card-img-top rounded-circle pb-3" alt="Trending Gift 3">
+						<div class="card-body card-demo-5-1">
+							<h5 class="card-title">Trending Product 3</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:void(0);"><button class="btn btn-5 mt-5">Load More</button></a>
+			</div>
+		</section>
+		<!-- END OF TRENDING GIFTS -->
+		<!-- HOW TO -->
+		<section id="steps" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Buy in 3 Steps</h1>
+				<div class="card-columns">
+					<div class="card bg-light">
+						<div class="card-body">
+							<i class="fas fa-hand-pointer fa-3x"></i>
+							<h5 class="card-title pt-3">Choose your Boquet</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>						</div>
+					</div>
+					<div class="card bg-light">
+						<div class="card-body">
+							<i class="fas fa-address-card fa-3x"></i>
+							<h5 class="card-title pt-3">Enter address of the recipients</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+					<div class="card bg-light">
+						<div class="card-body">
+							<i class="fas fa-credit-card fa-3x"></i>
+							<h5 class="card-title pt-3">Pay</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF HOW TO -->
+		<!-- BESTSELLERS -->
+		<section id="bestsellers" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Bestsellers</h1>
+				<div class="card-columns">
+					<div class="card">
+						<img src="website/images/flower-823655_640.jpg" class="card-img-top rounded-circle pb-3" alt="Bestsellers Gift 1">
+						<div class="card-body">
+							<h5 class="card-title">Bestseller Product 1</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="website/images/flower-180035_640.jpg" class="card-img-top rounded-circle pb-3" alt="Bestsellers Gift 2">
+						<div class="card-body">
+							<h5 class="card-title">Bestseller Product 2</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="website/images/bush-4781627_640.jpg" class="card-img-top rounded-circle pb-3" alt="Bestsellers Gift 3">
+						<div class="card-body">
+							<h5 class="card-title">Bestseller Product 3</h5>
+							<p class="card-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:void(0);"><button class="btn btn-5">Load More</button></a>
+			</div>
+		</section>
+		<!-- END OF BESTSELLERS -->
+		<!-- SPECIAL OFFER -->
+		<section id="offer" class="link-show-styling">
+			<div class="container-fluid text-center py-5">
+				<div class="card">
+					<div class="row no-gutters">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<div class="card card-body h-100 justify-content-center align-self-center">
+								<h1 class="card-title">Special Offer</h1>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<div>
+									<a href="javascript:void(0);"><button class="btn btn-5">Shop Now</button></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<img src="website/images/undraw_summer_jx06.svg" class="card-img" alt="Mockup Image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF SPECIAL OFFER -->
+		<!-- REVIEWS -->
+		<section id="reviews" class="link-show-styling">
+			<div class="container-fluid text-center pt-5">
+				<h1 class="pb-5">Reviews</h1>
+				<div class="owl-demo-5-1 owl-carousel">
+					<div class="card">
+						<div class="card-body">
+							<span class="card-title pt-3"><strong>Name of Reviewer 1</strong></span>
+							<span class="card-text p-3">CEO, xyz company</span>
+							<span class="card-text p-3">01/08/2019</span>
+							<i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+							<p class="card-text p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<span class="card-title p-3"><strong>Name of Reviewer 2</strong></span>
+							<span class="card-text p-3">CEO, xyz company</span>
+							<span class="card-text p-3">02/08/2019</span>
+							<i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+							<p class="card-text p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<span class="card-title p-3"><strong>Name of Reviewer 3</strong></span>
+							<span class="card-text p-3">CEO, xyz company</span>
+							<span class="card-text p-3">03/08/2019</span>
+							<i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+							<p class="card-text p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<span class="card-title p-3"><strong>Name of Reviewer 4</strong></span>
+							<span class="card-text p-3">CEO, xyz company</span>
+							<span class="card-text p-3">04/08/2019</span>
+							<i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+							<p class="card-text p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<span class="card-title p-3"><strong>Name of Reviewer 5</strong></span>
+							<span class="card-text p-3">CEO, xyz company</span>
+							<span class="card-text p-3">05/08/2019</span>
+							<i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+							<p class="card-text p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<span class="card-title p-3"><strong>Name of Reviewer 6</strong></span>
+							<span class="card-text p-3">CEO, xyz company</span>
+							<span class="card-text p-3">06/08/2019</span>
+							<i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+							<p class="card-text p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<span class="card-title p-3"><strong>Name of Reviewer 7</strong></span>
+							<span class="card-text p-3">CEO, xyz company</span>
+							<span class="card-text p-3">07/08/2019</span>
+							<i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+							<p class="card-text p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<span class="card-title p-3"><strong>Name of Reviewer 8</strong></span>
+							<span class="card-text p-3">CEO, xyz company</span>
+							<span class="card-text p-3">08/08/2019</span>
+							<i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+							<p class="card-text p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF REVIEWS -->
+		<!-- PRICING -->
+		<section id="pricing" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Pricing</h1>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="card-columns text-center">
+							<div class="card pricing-demo-5-1">
+								<div class="card-body">
+									<h3 class="m-4">Basic</h3>
+									<ul class="list-group">
+										<li class="list-group-item"><h5>$9.99 / year</h5></li>
+										<li class="list-group-item">10GB Storage</li>
+										<li class="list-group-item">10 Emails</li>
+										<li class="list-group-item">10 Domains</li>
+										<li class="list-group-item">1GB Bandwidth</li>
+										<li class="list-group-item">Basic Support</li>
+									</ul>
+									<a href="javascript:void(0);" class="btn btn-5 mt-4">Get Started</a>
+								</div>
+							</div>
+							<div class="card pricing-demo-5-2">
+								<div class="card-body">
+									<h3 class="m-4 text-white">Professional</h3>
+									<ul class="list-group">
+										<li class="list-group-item"><h5>$24.99 / year</h5></li>
+										<li class="list-group-item">25GB Storage</li>
+										<li class="list-group-item">25 Emails</li>
+										<li class="list-group-item">25 Domains</li>
+										<li class="list-group-item">2GB Bandwidth</li>
+										<li class="list-group-item">Priority Support</li>
+									</ul>
+									<a href="javascript:void(0);" class="btn btn-5 mt-4">Get Started</a>
+								</div>
+							</div>
+							<div class="card pricing-demo-5-1">
+								<div class="card-body">
+									<h3 class="m-4">Premium</h3>
+									<ul class="list-group">
+										<li class="list-group-item"><h5>$49.99 / year</h5></li>
+										<li class="list-group-item">50GB Storage</li>
+										<li class="list-group-item">50 Emails</li>
+										<li class="list-group-item">50 Domains</li>
+										<li class="list-group-item">5GB Bandwidth</li>
+										<li class="list-group-item">Email and Phone Support</li>
+									</ul>
+									<a href="javascript:void(0);" class="btn btn-5 mt-4">Get Started</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF PRICING -->
+		<!-- BLOG -->
+		<section id="blog" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Latest News</h1>
+				<div class="card-columns">
+					<div class="card">
+						<a href="javascript:void(0);">
+							<img src="website/images/laptop-2434393_1920.jpg" class="card-img mx-auto" alt="blog1">
+						</a>
+						<div class="card-body text-left">
+							<h4 class="card-title">Lorem ipsum</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="javascript:void(0);">
+							<img src="website/images/acer-791027_1920.jpg" class="card-img mx-auto" alt="blog2">
+						</a>
+						<div class="card-body text-left">
+							<h4 class="card-title">Lorem ipsum</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+					<div class="card">
+						<a href="javascript:void(0);">
+							<img src="website/images/office-932926_1920.jpg" class="card-img mx-auto" alt="blog3">
+						</a>
+						<div class="card-body text-left">
+							<h4 class="card-title">Lorem ipsum</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+						</div>
+					</div>
+				</div>
+				<a class="btn btn-5 mt-5" href="javascript:void(0);">View More</a>
+			</div>
+		</section>
+		<!-- END OF BLOG -->
+		<!-- VIDEO -->
+		<section id="video">
+			<div class="container-fluid py-5">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="website/videos/Daisies - 6340.mp4" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<!-- END OF VIDEO -->
+		<!-- CONTACT -->
+		<section id="contact" class="link-show-styling">
+			<div class="container text-center py-5">
+				<h1 class="pb-5">Contact Us</h1>
+				<form id="contact-form" method="post" action="javascript:void(0);" role="form">
+					<div class="messages"></div>
+					<div class="controls">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+								<i class="fas fa-envelope-open"></i>
+								<p>example@gmail.com</p>
+								<i class="fas fa-phone-alt"></i>
+								<p>(123)456-7890 </p>
+								<i class="fas fa-map-marker"></i>
+								<p>Building Number, Street Name, Neighborhood</p>
+								<p>City, Postal Code or Zip Code</p>
+								<p>Additional Number</p>
+								<i class="fas fa-clock"></i>
+								<p>Monday-Friday: 9:00 AM to 5:00 PM</p>
+								<p>Satuday and Sunday: Holidays</p>
+								<div class="col-12 py-5 pl-0">
+									<a href="javascript:void(0);" class="a-link-5"><i class="fab fa-instagram fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-5"><i class="fab fa-facebook-f fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-5"><i class="fab fa-twitter fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-5"><i class="fab fa-whatsapp fa-lg mr-2"></i></a>
+									<a href="javascript:void(0);" class="a-link-5"><i class="fab fa-reddit-alien fa-lg mr-2"></i></a>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+								<div class="form-group text-left">
+									<label for="form_name">Firstname *</label>
+									<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your Firstname" data-error="Firstname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group text-left">
+									<label for="form_lastname">Lastname *</label>
+									<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your Lastname " data-error="Lastname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group text-left">
+									<label for="form_email">Email *</label>
+									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your Email Address " data-error="Valid email is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group text-left">
+									<label for="form_message">Message *</label>
+									<textarea id="form_message" name="message" class="form-control" placeholder="Please leave us a Message " rows="4" data-error="Please, leave us a message."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="form-group">
+									<a href="javascript:void(0);">
+										<input type="submit" class="btn btn-5" value="Send message">
+									</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</form>
+			</div>
+		</section>
+		<!-- END OF CONTACT -->
+		<!-- NEWSLETTER -->
+		<section id="newsletter">
+			<div class="container-fluid text-center py-5">
+				<div class="card">
+					<div class="row no-gutters">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<img src="website/images/undraw_fall_thyk.svg" class="card-img" alt="Mockup Image">
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+							<div class="card card-body h-100 justify-content-center align-self-center">
+								<h1 class="pb-5">Join our Newsletter</h1>
+					<form class="input-group justify-content-center">
+						<input class="form-control col-8" type="email" placeholder="Email Address" aria-label="newsletter">
+						<div class="input-group-append">
+							<a href="javascript:void(0);">
+								<button class="btn btn-5" type="submit">Join</button>
+							</a>
+						</div>
+					</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF NEWSLETTER -->
+		<!-- FOOTER -->
+		<section id="footer-5">
+			<div class="container-fluid py-5 h-100">
+				<div class="row h-100 align-items-center">
+					<div class="col-md-4 text-center">
+						<p>
+							<a href="#home" class="link-5">Home</a>
+						
+						<p>
+							<a href="#about" class="link-5">About</a>
+						</p>
+						<p>
+							<a href="#services" class="link-5">Services</a>
+						</p>
+						<p>
+							<a href="#trending" class="link-5">Trending Gifts</a>
+						</p>
+						<p>
+							<a href="#steps" class="link-5">Buy in 3 Steps</a>
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<p>
+							<a href="#bestsellers" class="link-5">Bestsellers</a>
+						</p>
+						<p>
+							<a href="#offer" class="link-5">Special Offer</a>
+						</p>
+						<p>
+							<a href="#reviews" class="link-5">Reviews</a>
+						</p>
+						<p>
+							<a href="#pricing" class="link-5">Pricing</a>
+						</p>
+						<p>
+							<a href="#blog" class="link-5">Blog</a>
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<p>
+							<a href="#contact" class="link-5">Contact</a>
+						</p>
+						<p>
+							<a href="javascript:void(0);" class="link-5">Terms of Services</a>
+						</p>
+						<p>
+							<a href="javascript:void(0);" class="link-5">Privacy Policy</a>
+						</p>
+						<p>
+							<a href="javascript:void(0);" class="link-5">Site Map</a>
+						</p>
+						<a href="javascript:void(0);" class="link-5"><i class="fab fa-instagram fa-lg mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-5"><i class="fab fa-facebook-f fa-lg mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-5"><i class="fab fa-twitter fa-lg mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-5"><i class="fab fa-whatsapp fa-lg mr-2"></i></a>
+						<a href="javascript:void(0);" class="link-5"><i class="fab fa-reddit-alien fa-lg mr-2"></i></a>
+					</div>
+					<div class="col-12 text-center pt-5 text-white">
+						<p>hpthemes23 © 2020.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF FOOTER -->
+		<!-- SCROLL TOP -->
+		<div class='scrolltop'>
+			<div class='scroll icon'>
+				<i class="fa fa-4x fa-angle-up"></i>
+			</div>
+		</div>
+		<!-- END OF SCROLL TOP -->
+		<!-- JAVASCRIPT FILE -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!-- jquery script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script><!-- popper script -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script><!-- bootstrap script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script><!-- owl carousel script -->
+		<script src="website/js/script.js"></script><!-- main script of your page -->
+	</body>
+</html>

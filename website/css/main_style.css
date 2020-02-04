@@ -1,0 +1,614 @@
+/*
+Theme Name:     hpthemes23
+Version:        1.0
+*/
+/* Start main style css */
+*{
+    min-height: 0.01px;
+}
+body, html{
+    height: 100% !important;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: white !important;
+    color: gray !important;
+}
+.link-show-styling{
+    padding-top: 60px;
+    margin-top: -60px;
+}
+@media (max-width: 430px) {
+	body{
+		padding-top: 60px !important;
+	}
+	.c-styling{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		height:40px;
+		width:100%;
+		margin: 5px;
+	}
+	.navbar-brand{
+		font-size: 26px !important;
+	} 
+}
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 1 !important;
+    }
+	.card-count>.card-columns {
+        column-count: 1 !important;
+    }
+	.navbar-brand{
+		display: block !important;
+	}
+}
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 1 !important;
+    }
+	.card-count>.card-columns {
+        column-count: 1 !important;
+    }
+}
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 3 !important;
+    }
+	.card-count>.card-columns {
+        column-count: 4 !important;
+    }
+}
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 3 !important;
+    }
+	.card-count>.card-columns {
+        column-count: 4 !important;
+    }
+}
+.navbar-brand-styling{
+	background-color: transparent !important;
+	color: gray !important;
+}
+/* card styling */
+.card{
+	border: 0 !important;
+}
+/* demo 5 card styling */
+.card-demo-5-1{
+	background-color: #28b183;
+	color: white;
+}
+/* parallax styling */
+/* demo 1 parallax styling */
+.parallax-demo-1-1{
+	height: 100%;
+    background-image: url("../images/workplace-1245776_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.parallax-demo-1-2{
+	height: 100%;
+    background-image: url("../images/women-1209678_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.parallax-demo-1-3{
+	height: 100%;
+    background-image: url("../images/student-849822_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.parallax-demo-1-4{
+	height: 100%;
+    background-image: url("../images/office-336368_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+/* demo 6 parallax styling */
+.parallax-demo-6-1{
+	height: 100%;
+    background-image: url("../images/wood-3240764_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.parallax-demo-6-2{
+	height: 100%;
+    background-image: url("../images/desk-3076954_1280.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.parallax-demo-6-3{
+	height: 100%;
+    background-image: url("../images/tea-time-3240766_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.parallax-demo-6-4{
+	height: 100%;
+    background-image: url("../images/golden-791072_1280.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.parallax-demo-6-5{
+	height: 100%;
+    background-image: url("../images/time-4270427_1280.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/* demo 7 parallax styling */
+.parallax-demo-7-1{
+	height: 100%;
+    background-image: url("../images/writing-336370_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/* custom navigation bar styling */
+.navbar{
+    background-color: white !important;
+    color: gray !important;
+}
+.nav-link{
+	color: gray !important;
+}
+.nav-link:hover{
+	color: #1f1f1f !important;
+}
+/* demo 1 nav-pills styling */
+.nav-pills.nav-pills-1 .nav-link.active, .nav-pills.nav-pills-1 .show>.nav-link {
+    background-color: #1f1f1f !important;
+    color: white !important;
+}
+/* demo 2 nav-pills styling */
+.nav-pills.nav-pills-2 .nav-link.active, .nav-pills.nav-pills-2 .show>.nav-link {
+    background-color: #ec492c !important;
+    color: white !important;
+}
+/* demo 3 nav-pills styling */
+.nav-pills.nav-pills-3 .nav-link.active, .nav-pills.nav-pills-3 .show>.nav-link {
+    background-color: #0f284e !important;
+    color: white !important;
+}
+/* demo 4 nav-pills styling */
+.nav-pills.nav-pills-4 .nav-link.active, .nav-pills.nav-pills-4 .show>.nav-link {
+    background-color: #f3d125 !important;
+    color: black !important;
+}
+/* demo 1 link */
+.a-link-1{
+	color: gray;
+}
+.a-link-1:hover{
+	color: #1f1f1f;
+}
+/* demo 2 link */
+.a-link-2{
+	color: gray;
+}
+.a-link-2:hover{
+	color: #ec492c;
+}
+/* demo 3 link */
+.a-link-3{
+	color: gray;
+}
+.a-link-3:hover{
+	color: #0f284e;
+}
+/* demo 4 link */
+.a-link-4{
+	color: gray;
+}
+.a-link-4:hover{
+	color: #f3d125;
+}
+/* demo 5 link */
+.a-link-5{
+	color: gray;
+}
+.a-link-5:hover{
+	color: #28b183;
+}
+/* demo 6 link */
+.a-link-6{
+	color: gray;
+}
+.a-link-6:hover{
+	color: #58595B;
+}
+/* demo 7 page link styling */
+.page-link {
+    background-color: black !important;
+    color: white !important;
+}
+.page-link:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black;
+}
+/* demo 1 button styling */
+.btn-1{
+	background-color: #1f1f1f;
+	color: white;
+}
+.btn-1:hover{
+	background-color: white;
+	color: #1f1f1f;
+	border: 1px solid #1f1f1f;
+}
+/* demo 2 button styling */
+.btn-2{
+	background-color: #ec492c;
+	color: white;
+}
+.btn-2:hover{
+	background-color: white;
+	color: #ec492c;
+	border: 1px solid #ec492c;
+}
+/* demo 3 button styling */
+.btn-3{
+	background-color: #0f284e;
+	color: white;
+}
+.btn-3:hover{
+	background-color: white;
+	color: #0f284e;
+	border: 1px solid #0f284e;
+}
+/* demo 4 button styling */
+.btn-4{
+	background-color: #f3d125;
+	color: black;
+}
+.btn-4:hover{
+	background-color: white;
+	color: #f3d125;
+	border: 1px solid #f3d125;
+}
+/* demo 5 button styling */
+.btn-5{
+	background-color: #28b183;
+	color: white;
+}
+.btn-5:hover{
+	background-color: white;
+	color: #28b183;
+	border: 1px solid #28b183;
+}
+/* demo 6 button styling */
+.btn-6{
+	background-color: #58595b;
+	color: white;
+}
+.btn-6:hover{
+	background-color: white;
+	color: #58595B;
+	border: 1px solid #58595b;
+}
+/* demo 7 button styling */
+.btn-7{
+	background-color: black;
+	color: white;
+}
+.btn-7:hover{
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
+/* demo 3 pricing styling */
+.pricing-demo-3-1{
+	background-color: #e1e1dd;
+	color: gray;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.pricing-demo-3-2{
+	background-color: #0f284e;
+	color: gray;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.pricing-demo-3-1:hover, .pricing-demo-3-2:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* demo 5 pricing styling */
+.pricing-demo-5-1{
+	background-color: #e1e1dd;
+	color: gray;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.pricing-demo-5-2{
+	background-color: #28b183;
+	color: gray;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.pricing-demo-5-1:hover, .pricing-demo-5-2:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* demo 6 pricing styling */
+.pricing-demo-6-1{
+	background-color: #e1e1dd;
+	color: gray;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.pricing-demo-6-2{
+	background-color: #58595b;
+	color: gray;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.pricing-demo-6-1:hover, .pricing-demo-6-2:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* hover zoom styling */
+.hover-zoomin img {
+	width: 100%;
+	height: auto;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.hover-zoomin:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* demo 3 styling */
+.div-reviews{
+	background-color: #0f284e;
+	color: white;
+}
+/* demo 5 div styling */
+.div-header{
+	background-color: rgba(255,255,255,0.8);
+	padding: 15px;
+}
+.div-transparent{
+	background-color: rgba(255,255,255,0.7);
+	padding: 15px;
+}
+/* demo 1 hp styling */
+.hp-styling-demo-1{
+	background-color: transparent;
+	color: white;
+	word-wrap: break-word;
+}
+/* demo 6 styling */
+.hp-styling-demo-6{
+	background-color: transparent;
+	color: #58595B;
+	word-wrap: break-word;
+}
+/* demo 1 footer and link styling */
+#footer-1{
+	background-color: #1f1f1f;
+}
+.link-1{
+	color: gray;
+}
+.link-1:hover{
+	color: white;
+	text-decoration: none;
+}
+/* demo 2 footer and link styling */
+#footer-2{
+	background-color: #ec492c;
+}
+.link-2{
+	color: white;
+}
+.link-2:hover{
+	color: white;
+	text-decoration: none;
+}
+/* demo 3 footer and link styling */
+#footer-3{
+	background-color: #0f284e;
+}
+.link-3{
+	color: white;
+}
+.link-3:hover{
+	color: white;
+	text-decoration: none;
+}
+/* demo 4 footer and link styling */
+#footer-4{
+	background-color: #f3d125;
+}
+.link-4{
+	color: black;
+}
+.link-4:hover{
+	color: black;
+	text-decoration: none;
+}
+/* demo 5 footer and link styling */
+#footer-5{
+	background-color: #28b183;
+}
+.link-5{
+	color: white;
+}
+.link-5:hover{
+	color: white;
+	text-decoration: none;
+}
+/* demo 6 footer and link styling */
+#footer-6{
+	background-color: #58595B;
+}
+.link-6{
+	color: gray;
+}
+.link-6:hover{
+	color: #58595B;
+	text-decoration: none;
+}
+/* demo 7 footer styling */
+#footer-7{
+	background-color: black;
+}
+/* Image size styling */
+.image-size{
+    width: 400px !important;
+    height: 300px !important;
+}
+/* Particles Styling */
+#particles-js {
+	position: relative !important;
+}
+.particles-styling {
+	position: absolute !important;
+}
+/* documentation scrolling */
+.scroll-doc{
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+/* scroll top styling */
+.scrolltop{
+	display: none;
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+}
+.scroll{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	background: #b2b2b2;
+	background: rgba(178,178,178,0.7);
+	padding: 20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor: pointer;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.scroll:hover {
+	background: rgba(178,178,178,1.0);
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;	
+}
+.scroll .fa {
+	font-size: 30px;
+	margin-top: -5px;
+	margin-left: 1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+.scroll:hover .fa {
+	padding-top: -10px;
+}
+/* End main style css */
